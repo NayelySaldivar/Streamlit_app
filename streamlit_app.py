@@ -95,7 +95,7 @@ with modelTrain:
     score_train = model.score(x_train, y_train)
     score_test = model.score(x_test, y_test)
     
-    col1, col2 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
     with col1:
         st.text(f'Train Score:{round(score_train *100,2)}%')
     with col2:
